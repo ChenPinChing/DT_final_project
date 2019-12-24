@@ -128,7 +128,7 @@
                     <p align="right" id="ptt_tail"><font size="4px"><font color="gray">來源：批踢踢實業坊(ptt.cc)　#1Rd83-NW (Gossiping)</font></font></p>
                 </div>
                 <p id="wanna_know">隨著科技日新月異，資訊消息傳播的越來越廣、越來越快，資訊戰的戰火只會越燒越烈；而同樣的中國政府對台的侵略也不會一夕間嘎然而止，面對這樣的羅生門，我們不禁想知道</p>
-                <p id="question_is">真正的問題是什麼？</p>
+                <p id="question_is" align="center"><font size="60px">真正的問題是什麼？</font></p>
                 <p id="question">我們沒辦法阻止有心人士散播不實消息，但我們可以選擇提升閱聽人的媒體識讀能力，不再只當個被動的接收者。</br></br>
 
                     與其讓機器武斷的去辨別文章的真假，我們將問題重新定義，將目標設為：「識別中文文章來源」。有鑑於中國方對台的一直以來的侵略態度，若能在閱讀時能夠注意到文章是來自於中國，便能更謹慎的汲取資訊，不讓自己在無意間被中國統一思想潛移默化。</br></br></p>
@@ -142,85 +142,90 @@
                 </div> -->
                 <img id="cv1" src="./pics/c1.png" style="left:-100%">
                 <img id="cv2" src="./pics/c2.png" style="left: 100%; top:120%">
-
+				<p id="solution">我們蒐集了中國及台灣兩個資金主要來源為政府的媒體：人民日報以及中央社，總計約五萬則新聞，將文章全數轉成正體中文後，使用中研院所開發的ckip斷詞工具處理，建立自己的詞庫，再將詞庫送給RNN神經網路訓練。</p>
                 <script type="text/javascript">
                     var pinani = new TimelineMax()
 
     .add(TweenMax.to("#title_img", 0, {opacity: 1}))
     .add([
-        TweenMax.to("#title_img", 0.1, {opacity: 0}),
-        TweenMax.to("#sentence1", 0.3, {opacity: 1})
+        TweenMax.to("#title_img", 0.1, {opacity: 0, delay: 0.2}),
+        TweenMax.to("#sentence1", 0.3, {opacity: 1, delay: 0.2})
     ])
 
     .add([
-        TweenMax.to("#sentence1", 0, {opacity: 0}),
-        TweenMax.to("#img1", 0.2, {opacity: 1})
+        TweenMax.to("#sentence1", 0, {opacity: 0, delay: 0.2}),
+        TweenMax.to("#img1", 0.2, {opacity: 1, delay: 0.4})
     ])
     .add([
-        TweenMax.to("#img1", 0, {opacity: 0}),
-        TweenMax.to("#img2", 0.1, {opacity: 1})
+        TweenMax.to("#img1", 0, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#img2", 0.1, {opacity: 1,delay: 0.2})
     ])
     .add([
-        TweenMax.to("#img2", 0, {opacity: 0}),
-        TweenMax.to("#img3", 0.1, {opacity: 1})
+        TweenMax.to("#img2", 0, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#img3", 0.1, {opacity: 1,delay: 0.2})
     ])
     .add([
-        TweenMax.to("#img3", 0, {opacity: 0}),
-        TweenMax.to("#img4", 0.1, {opacity: 1})
+        TweenMax.to("#img3", 0, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#img4", 0.1, {opacity: 1,delay: 0.2})
     ])
     .add([
-        TweenMax.to("#img4", 0, {opacity: 0}),
-        TweenMax.to("#img5", 0.1, {opacity: 1})
+        TweenMax.to("#img4", 0, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#img5", 0.1, {opacity: 1,delay: 0.2})
     ])
     .add([
-        TweenMax.to("#img5", 0, {opacity: 0}),
-        TweenMax.to("#img6", 0.1, {opacity: 1})
+        TweenMax.to("#img5", 0, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#img6", 0.1, {opacity: 1,delay: 0.2})
     ])
     .add([
-        TweenMax.to("#img6", 0, {opacity: 0}),
-        TweenMax.to("#sentence2", 0.3, {opacity: 1})
+        TweenMax.to("#img6", 0, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#sentence2", 0.3, {opacity: 1,delay: 0.4})
     ])
     .add([
-        TweenMax.to("#sentence2", 0.1, {opacity: 0}),
-        TweenMax.to("#ptt1", 0.3, {opacity: 1}),
+        TweenMax.to("#sentence2", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#ptt1", 0.3, {opacity: 1,delay: 0.4}),
     ])
-    .add(TweenMax.to("#ptt2", 0.3, {opacity: 1}))
-    .add(TweenMax.to("#ptt3", 0.3, {opacity: 1}))
-    .add(TweenMax.to("#ptt4", 0.3, {opacity: 1}))
-    .add(TweenMax.to("#ptt5", 0.3, {opacity: 1}))
-    .add(TweenMax.to("#ptt6", 0.3, {opacity: 1}))
-    .add(TweenMax.to("#ptt7", 0.3, {opacity: 1}))
-    .add(TweenMax.to("#ptt_tail", 0.3, {opacity: 1}))
+    .add(TweenMax.to("#ptt2", 0.3, {opacity: 1,delay: 0.2}))
+    .add(TweenMax.to("#ptt3", 0.3, {opacity: 1,delay: 0.2}))
+    .add(TweenMax.to("#ptt4", 0.3, {opacity: 1,delay: 0.2}))
+    .add(TweenMax.to("#ptt5", 0.3, {opacity: 1,delay: 0.2}))
+    .add(TweenMax.to("#ptt6", 0.3, {opacity: 1,delay: 0.2}))
+    .add(TweenMax.to("#ptt7", 0.3, {opacity: 1,delay: 0.2}))
+    .add(TweenMax.to("#ptt_tail", 0.3, {opacity: 1,delay: 0.2}))
 
     .add([
-        TweenMax.to("#ptt1", 0.1, {opacity: 0}),
-        TweenMax.to("#ptt2", 0, {opacity: 0}),
-        TweenMax.to("#ptt3", 0, {opacity: 0}),
-        TweenMax.to("#ptt4", 0, {opacity: 0}),
-        TweenMax.to("#ptt4", 0, {opacity: 0}),
-        TweenMax.to("#ptt5", 0, {opacity: 0}),
-        TweenMax.to("#ptt6", 0, {opacity: 0}),
-        TweenMax.to("#ptt7", 0, {opacity: 0}),
-        TweenMax.to("#ptt_tail", 0, {opacity: 0}),
-        TweenMax.to("#wanna_know", 0.1, {opacity: 1})
+        TweenMax.to("#ptt1", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#ptt2", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#ptt3", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#ptt4", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#ptt4", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#ptt5", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#ptt6", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#ptt7", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#ptt_tail", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#wanna_know", 0.1, {opacity: 1,delay: 0.4})
     ])
     .add([
-        TweenMax.to("#wanna_know", 0.1, {opacity: 0}),
-        TweenMax.to("#question_is", 0.3, {opacity: 1})
+        TweenMax.to("#wanna_know", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#question_is", 0.3, {opacity: 1,delay: 0.2})
     ])
     .add([
-        TweenMax.to("#question_is", 0.1, {opacity: 0}),
-        TweenMax.to("#question", 0.3, {opacity: 1})
+        TweenMax.to("#question_is", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#question", 0.3, {opacity: 1,delay: 0.2})
     ])
 
     .add([
-        TweenMax.to("#question", 0.1, {opacity: 0}),
-        TweenMax.to("#cv1", 0.1, {opacity: 1}),
-        TweenMax.to("#cv1", 1, {left:"0%",ease: Bounce.easeOut, delay:0})
+        TweenMax.to("#question", 0.1, {opacity: 0,delay: 0.2}),
+        TweenMax.to("#cv1", 0.1, {opacity: 1,delay: 0.2}),
+        TweenMax.to("#cv1", 1, {left:"0%",ease: Bounce.easeOut, delay:0.1})
     ])
     .add([
-        TweenMax.to("#cv2", 0.1, {opacity: 1}),
-        TweenMax.to("#cv2", 1, {left:"10%",ease: Bounce.easeOut, delay:0})
+        TweenMax.to("#cv2", 0.1, {opacity: 1,delay: 0.1}),
+        TweenMax.to("#cv2", 1, {left:"10%",ease: Bounce.easeOut, delay:0.1})
+    ])
+    .add([
+    	TweenMax.to("#cv1", 0.2, {opacity: 0,delay: 0.1}),
+    	TweenMax.to("#cv2", 0.2, {opacity: 0,delay: 0.1}),
+    	TweenMax.to("#solution", 0.3, {opacity: 1,delay: 0.2})
     ])
 
 new ScrollScene({
