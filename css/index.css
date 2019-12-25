@@ -1,23 +1,58 @@
+:root {
+    --first:110%;
+    --ptt:7%;
+}
 * {
     background-color: rgb(60,60,60);
 }
 
 p{
-    position: absolute;
     background-color: rgba(0%, 0%, 0%, 0);
+    position: absolute; 
     top: 130%;
     bottom: 200%;
-    left: 25%;
-    right: 25%;
+    left: 21%;
+    right: 21%;
     opacity: 0;
     color: white;
     font-size:36px; 
     font-family: 微軟正黑體;
 }
 
-h6{
-    opacity: 0;
-    color: orange
+#sentence2{
+    top: 108%;
+}
+#ptt1{
+    top: 113%;
+}
+#ptt2{
+    top:122%;
+}
+#ptt3{
+    top:131%;
+}
+#ptt4{
+    top:140%;
+}
+#ptt5{
+    top:149%;
+}
+#ptt6{
+    top:158%;
+}
+#ptt7{
+    top:167%;
+}
+#ptt_tail{
+    top:176%;
+}
+
+#question_is{
+    top:140%;
+}
+
+#question{
+    top:120%;
 }
 
 img {
@@ -31,19 +66,8 @@ img {
 }
 
 
-#vedio
-{
-    position: absolute;
-    background-color: rgba(0%, 0%, 0%, 0);
-    top: 125%;
-    bottom: 150%;
-    left: 0%;
-    right: 0%;
-    opacity: 1;
-}
-
 #ptt>p {
+     color : orange;
     /* margin: 1px 200px; */
-    color : orange;
 }
 
